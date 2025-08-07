@@ -1,0 +1,141 @@
+backend:
+  name: github
+  repo: username/repository-name  # UPDATE THIS with your GitHub username/repo
+  branch: main
+  base_url: https://decap-proxy-projectname.username.workers.dev  # UPDATE THIS with your worker URL
+  auth_endpoint: /auth
+
+local_backend: false
+site_url: "https://your-domain.com"  # UPDATE THIS with your domain
+display_url: "https://your-domain.com"  # UPDATE THIS with your domain
+media_folder: "public/assets/images"
+public_folder: "/assets/images"
+
+collections:
+  # Site Settings
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - file: "content/settings/general.md"
+        label: "General Settings"
+        name: "general"
+        fields:
+          - {label: "Site Title", name: "title", widget: "string", default: "Flight Deck Strategic Solutions"}
+          - {label: "Site Description", name: "description", widget: "text", default: "Strategic business solutions for growth and success"}
+          - {label: "Contact Email", name: "email", widget: "string", default: "info@example.com"}
+          - {label: "Phone Number", name: "phone", widget: "string", default: "+1 (555) 123-4567"}
+          - {label: "Address", name: "address", widget: "text", default: "123 Business St, Suite 100\nCity, State 12345"}
+          - {label: "Social Links", name: "social", widget: "object", fields: [
+              {label: "LinkedIn", name: "linkedin", widget: "string", required: false},
+              {label: "Twitter", name: "twitter", widget: "string", required: false},
+              {label: "Facebook", name: "facebook", widget: "string", required: false}
+            ]}
+
+  # Pages
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "SEO Title", name: "seo_title", widget: "string", required: false}
+      - {label: "SEO Description", name: "seo_description", widget: "text", required: false}
+
+  # Blog Posts
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Author", name: "author", widget: "string", default: "Admin"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Categories", name: "categories", widget: "list", default: ["Business"]}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "SEO Title", name: "seo_title", widget: "string", required: false}
+      - {label: "SEO Description", name: "seo_description", widget: "text", required: false}
+
+  # Services
+  - name: "services"
+    label: "Services"
+    folder: "content/services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Short Description", name: "short_description", widget: "text"}
+      - {label: "Icon", name: "icon", widget: "string", hint: "Font Awesome icon name (e.g., fa-chart-line)"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Price", name: "price", widget: "string", required: false}
+      - {label: "Features", name: "features", widget: "list"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Order", name: "order", widget: "number", default: 0}
+
+  # Team Members
+  - name: "team"
+    label: "Team"
+    folder: "content/team"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Position", name: "position", widget: "string"}
+      - {label: "Bio", name: "bio", widget: "text"}
+      - {label: "Photo", name: "photo", widget: "image"}
+      - {label: "Email", name: "email", widget: "string", required: false}
+      - {label: "LinkedIn", name: "linkedin", widget: "string", required: false}
+      - {label: "Order", name: "order", widget: "number", default: 0}
+
+  # Testimonials
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "content/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Client Name", name: "name", widget: "string"}
+      - {label: "Company", name: "company", widget: "string"}
+      - {label: "Position", name: "position", widget: "string", required: false}
+      - {label: "Testimonial", name: "testimonial", widget: "text"}
+      - {label: "Rating", name: "rating", widget: "number", min: 1, max: 5, default: 5}
+      - {label: "Photo", name: "photo", widget: "image", required: false}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+
+  # Navigation
+  - name: "navigation"
+    label: "Navigation"
+    files:
+      - file: "content/navigation/header.md"
+        label: "Header Navigation"
+        name: "header"
+        fields:
+          - label: "Menu Items"
+            name: "menu_items"
+            widget: "list"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "URL", name: "url", widget: "string"}
+              - {label: "Open in New Tab", name: "external", widget: "boolean", default: false}
+      - file: "content/navigation/footer.md"
+        label: "Footer Navigation"
+        name: "footer"
+        fields:
+          - label: "Footer Columns"
+            name: "columns"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - label: "Links"
+                name: "links"
+                widget: "list"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "URL", name: "url", widget: "string"}
