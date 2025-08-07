@@ -17,7 +17,7 @@ export default function Header() {
   ];
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
+    const element = document.querySelector(href) as HTMLElement;
     if (element) {
       const headerHeight = 80; // h-20 = 5rem = 80px
       const elementPosition = element.offsetTop - headerHeight;
