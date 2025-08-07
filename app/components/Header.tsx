@@ -10,9 +10,9 @@ export default function Header() {
   const navigationItems = [
     { label: 'What We Do', href: '#what-we-do' },
     { label: 'Workshops', href: '#workshops' },
-    { label: 'Join Us', href: '#join-us' },
-    { label: 'Lunch & Learn', href: '#lunch-learn' },
     { label: 'Consultation', href: '#consultation' },
+    { label: 'Lunch & Learn', href: '#lunch-learn' },
+    { label: 'Join Us', href: '#join-us' },
     { label: 'Contact', href: '#contact' },
   ];
 

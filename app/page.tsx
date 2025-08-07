@@ -30,14 +30,14 @@ export default function Home() {
       {/* Workshop Topics */}
       <WorkshopTopicsSection />
       
-      {/* Join Us – Pilot Facilitators */}
-      <JoinUsSection />
+      {/* Free Consultation */}
+      <ConsultationSection onOpenCalendar={() => setIsCalendarModalOpen(true)} />
       
       {/* Lunch & Learn Offer */}
       <LunchLearnSection />
       
-      {/* Free Consultation */}
-      <ConsultationSection onOpenCalendar={() => setIsCalendarModalOpen(true)} />
+      {/* Join Us – Pilot Facilitators */}
+      <JoinUsSection />
       
       {/* Contact Us */}
       <ContactSection />
