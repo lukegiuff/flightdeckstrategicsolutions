@@ -19,7 +19,12 @@ export default function Header() {
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const headerHeight = 80; // h-20 = 5rem = 80px
+      const elementPosition = element.offsetTop - headerHeight;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
     }
     setIsMobileMenuOpen(false);
   };
@@ -46,7 +51,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex items-center space-x-6">
             <div className="flex items-center space-x-1">
               {navigationItems.map((item) => (
                 <button
@@ -58,6 +63,14 @@ export default function Header() {
                 </button>
               ))}
             </div>
+            
+            {/* CTA Button */}
+            <button
+              onClick={() => scrollToSection('#consultation')}
+              className="bg-brand text-white px-4 py-2 text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-white whitespace-nowrap"
+            >
+              Book Free Consultation
+            </button>
           </div>
 
           {/* Mobile menu button */}
