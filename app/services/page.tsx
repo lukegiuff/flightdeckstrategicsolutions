@@ -14,7 +14,7 @@ export default async function ServicesPage() {
 
   // Icon mapping function
   const getIcon = (iconName: string) => {
-    const iconMap: { [key: string]: React.ComponentType<any> } = {
+    const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } = {
       'target': Target,
       'shield-check': ShieldCheck,
       'users': Users,

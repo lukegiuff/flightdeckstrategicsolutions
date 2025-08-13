@@ -6,9 +6,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { 
   Users, 
-  Target, 
-  TrendingUp, 
-  Award,
+  Target,
   Calendar,
   FileText,
   X,
@@ -62,13 +60,13 @@ export default function HomeClient({ homePage, services }: HomeClientProps) {
       <HeroSection homePage={homePage} />
       
       {/* What We Do Section - using content from markdown */}
-      <WhatWeDoSection homePage={homePage} />
+      <WhatWeDoSection />
       
       {/* Workshop Topics - using services data */}
       <WorkshopTopicsSection services={sortedServices} />
       
       {/* Free Consultation */}
-      <ConsultationSection onOpenCalendar={() => setIsCalendarModalOpen(true)} />
+      <ConsultationSection />
       
       {/* Lunch & Learn Offer */}
       <LunchLearnSection />
@@ -159,7 +157,7 @@ function HeroSection({ homePage }: { homePage: Page | null }) {
 }
 
 // What We Do Section - parsing markdown content
-function WhatWeDoSection({ homePage }: { homePage: Page | null }) {
+function WhatWeDoSection() {
   return (
     <motion.section 
       initial={{ opacity: 0, y: 20 }}
@@ -209,7 +207,7 @@ function WhatWeDoSection({ homePage }: { homePage: Page | null }) {
 function WorkshopTopicsSection({ services }: { services: Service[] }) {
   // Icon mapping function
   const getIcon = (iconName: string) => {
-    const iconMap: { [key: string]: React.ComponentType<any> } = {
+    const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } = {
       'target': Target,
       'shield-check': ShieldCheck,
       'users': Users,
@@ -257,7 +255,7 @@ function WorkshopTopicsSection({ services }: { services: Service[] }) {
 }
 
 // Free Consultation Section
-function ConsultationSection({ onOpenCalendar }: { onOpenCalendar: () => void }) {
+function ConsultationSection() {
   return (
     <motion.section 
       initial={{ opacity: 0, y: 20 }}
