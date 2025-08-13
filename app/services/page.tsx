@@ -1,17 +1,39 @@
 import Link from 'next/link';
 import { getAllServices } from '@/app/lib/content';
+import { 
+  Target, 
+  ShieldCheck, 
+  Users, 
+  Crown, 
+  TriangleAlert, 
+  Lightbulb 
+} from 'lucide-react';
 
 export default async function ServicesPage() {
   const services = await getAllServices();
+
+  // Icon mapping function
+  const getIcon = (iconName: string) => {
+    const iconMap: { [key: string]: React.ComponentType<any> } = {
+      'target': Target,
+      'shield-check': ShieldCheck,
+      'users': Users,
+      'crown': Crown,
+      'triangle-alert': TriangleAlert,
+      'lightbulb': Lightbulb
+    };
+    
+    return iconMap[iconName] || Target; // Default to Target if icon not found
+  };
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Workshop Topics</h1>
           <p className="text-xl">
-            Comprehensive strategic solutions designed to drive your business forward
+            Aviation-inspired training modules that blend flight deck excellence with business strategy
           </p>
         </div>
       </section>
@@ -20,33 +42,30 @@ export default async function ServicesPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {services.length > 0 ? (
-            <div className="grid md:grid-cols-2 gap-12">
-              {services.map((service) => (
-                <div key={service.slug} className="bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
-                  <div className="flex items-start space-x-4">
-                    <div className="text-blue-600 text-4xl flex-shrink-0">
-                      <i className={service.data.icon}></i>
-                    </div>
-                    <div className="flex-grow">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {services.map((service) => {
+                const IconComponent = getIcon(service.data.icon as string);
+                
+                return (
+                  <div key={service.slug} className="bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
+                    <div className="text-center">
+                      <IconComponent className="w-16 h-16 text-blue-600 mx-auto mb-4" />
                       <h2 className="text-2xl font-bold text-gray-900 mb-3">
                         {service.data.title}
                       </h2>
-                      <p className="text-gray-600 mb-4">
+                      <p className="text-gray-600 mb-6">
                         {service.data.short_description}
                       </p>
-                      
-                      {service.data.price && (
-                        <p className="text-lg font-semibold text-blue-600 mb-4">
-                          {service.data.price}
-                        </p>
-                      )}
                       
                       {service.data.features && service.data.features.length > 0 && (
                         <div className="mb-6">
                           <h3 className="font-semibold text-gray-900 mb-2">Key Features:</h3>
-                          <ul className="list-disc list-inside text-gray-600 space-y-1">
+                          <ul className="text-left text-gray-600 space-y-1">
                             {service.data.features.slice(0, 4).map((feature, index) => (
-                              <li key={index}>{feature}</li>
+                              <li key={index} className="flex items-start gap-2">
+                                <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                                {feature}
+                              </li>
                             ))}
                           </ul>
                         </div>
@@ -68,8 +87,8 @@ export default async function ServicesPage() {
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           ) : (
             <div className="text-center py-16">

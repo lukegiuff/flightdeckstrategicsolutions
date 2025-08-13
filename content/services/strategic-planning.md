@@ -1,72 +1,62 @@
 ---
-title: "Strategic Planning & Execution"
-short_description: "Develop comprehensive strategic plans that align your organization's capabilities with market opportunities for sustainable growth."
-icon: "fa-chess"
-price: "Starting at $15,000"
+title: "Precision Decision Making"
+short_description: "Equip your team with systematic frameworks for making critical business decisions under pressure with confidence, using decision-making tools employed by Airline Pilots."
+icon: "target"
 features:
-  - "Comprehensive market and competitive analysis"
-  - "Strategic framework development"
-  - "Goal setting and KPI definition"
-  - "Implementation roadmap creation"
-  - "Quarterly progress reviews"
-  - "Strategic plan documentation"
+  - "Systematic decision-making framework"
+  - "High-pressure scenario training"
+  - "Confidence building techniques"
+  - "Real-world aviation case studies"
+  - "Tools for critical business decisions"
+  - "Expert Airline Pilot facilitation"
 order: 1
 ---
 
-# Strategic Planning & Execution
+# Precision Decision Making
 
-## Transform Vision into Action
+## Does your team put off making decisions, for fear of making the wrong one?
 
-Strategic planning isn't just about setting goals—it's about creating a clear, actionable roadmap that aligns your entire organization toward common objectives. Our strategic planning process combines analytical rigor with practical implementation to ensure your strategy drives real results.
+Our team of experienced Airline Pilots will equip you with a systematic framework for making critical business decisions under pressure with confidence.
+
+## What You'll Learn
+
+### Aviation-Proven Decision Framework
+Learn the systematic approach that Airline Pilots use to make life-critical decisions in high-pressure scenarios, adapted for business environments.
+
+### Confidence Under Pressure
+Develop the mental tools and techniques that enable pilots to maintain clarity and make sound decisions even when stakes are high and time is limited.
+
+### Risk Assessment Protocols
+Master the aviation industry's approach to evaluating options, assessing risks, and selecting the optimal course of action with incomplete information.
+
+### Team Decision Making
+Understand how flight crews collaborate effectively to make decisions, ensuring all relevant input is considered while maintaining clear accountability.
 
 ## Our Approach
 
-### 1. Strategic Assessment
-We begin by conducting a comprehensive analysis of your current position, including:
-- Internal capabilities and resources assessment
-- Market dynamics and competitive landscape analysis
-- SWOT analysis and strategic positioning evaluation
-- Stakeholder needs and expectations review
+Drawing directly from aviation experience, our Airline Pilot facilitators share real-world examples of decision-making under pressure, demonstrating how these principles translate to business challenges.
 
-### 2. Strategic Framework Development
-Working collaboratively with your leadership team, we develop:
-- Clear mission, vision, and values statements
-- Strategic objectives and key priorities
-- Resource allocation frameworks
-- Risk assessment and mitigation strategies
+### Key Topics Covered:
+- **Structured Decision Models**: Step-by-step frameworks used in aviation
+- **Time-Critical Decisions**: Managing urgency without sacrificing quality
+- **Information Management**: Working effectively with incomplete data
+- **Stress Management**: Maintaining cognitive performance under pressure
+- **Communication Protocols**: Ensuring clear decision communication
+- **Learning from Outcomes**: Continuous improvement through decision analysis
 
-### 3. Implementation Planning
-Strategy without execution is just wishful thinking. We create:
-- Detailed implementation roadmaps
-- Accountability structures and governance
-- Performance metrics and tracking systems
-- Change management plans
+## Format Options
 
-### 4. Execution Support
-Our partnership doesn't end with the plan. We provide:
-- Quarterly strategy reviews and adjustments
-- Performance monitoring and reporting
-- Strategic initiative coaching
-- Continuous improvement recommendations
+- **Lunch & Learn**: 1-hour focused session (up to 20 participants) - £995
+- **Half-Day Workshop**: In-depth training with practical exercises
+- **Full-Day Programme**: Comprehensive decision-making transformation
+- **Executive Coaching**: Personalized sessions for leadership teams
 
 ## What You'll Receive
 
-- **Comprehensive Strategic Plan**: A detailed document outlining your strategic direction, objectives, and implementation approach
-- **Implementation Roadmap**: Month-by-month action plans with clear accountability and timelines
-- **Performance Dashboard**: Key metrics and tracking systems to monitor progress
-- **Executive Briefings**: Regular updates and strategic guidance for leadership
-- **Team Alignment Tools**: Resources to ensure organization-wide understanding and buy-in
+- Proven decision-making frameworks and tools
+- Real aviation case studies and examples
+- Practical exercises and scenario planning
+- Resource materials for ongoing application
+- Follow-up support and guidance
 
-## Investment
-
-Strategic planning engagements typically range from $15,000 to $50,000, depending on organization size and scope. Most clients see a return on investment within the first year through improved focus, resource allocation, and strategic execution.
-
-## Success Stories
-
-Our strategic planning clients typically experience:
-- 25-40% improvement in goal achievement rates
-- Enhanced organizational alignment and focus
-- Better resource allocation and investment decisions
-- Increased stakeholder confidence and engagement
-
-Ready to develop a strategic plan that drives real results? [Contact us today](/contact) to discuss your strategic planning needs.
+Transform your team's decision-making capability with aviation-proven methodologies. [Contact us today](/contact) to book your Precision Decision Making session.

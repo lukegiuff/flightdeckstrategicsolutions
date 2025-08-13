@@ -1,49 +1,69 @@
 ---
 title: "About Flight Deck Strategic Solutions"
-description: "Learn about our mission, values, and commitment to delivering exceptional strategic consulting services that drive business transformation and sustainable growth."
+description: "Learn about our aviation-inspired approach to business training, delivered by experienced Airline Pilots who bring flight deck excellence to boardroom solutions."
 seo_title: "About Us - Flight Deck Strategic Solutions"
-seo_description: "Discover Flight Deck Strategic Solutions' story, our experienced team, and our commitment to helping businesses achieve strategic excellence and sustainable growth."
+seo_description: "Discover how our team of experienced Airline Pilots transforms businesses through aviation-proven methodologies in decision-making, psychological safety, and team performance."
 ---
 
 # About Flight Deck Strategic Solutions
 
 ## Our Mission
 
-Flight Deck Strategic Solutions exists to empower businesses with the strategic insights, operational excellence, and leadership capabilities needed to thrive in today's competitive marketplace. We believe every organization has the potential for greatness—our job is to help unlock it.
+"Aviation has perfected the art of high-stakes decision-making under pressure. Our mission is to bring that same level of precision, clarity and systematic thinking to business leadership. We equip our clients with aviation-proven tools to develop high-performing teams, while promoting a culture of psychological safety, resilience and risk management."
+
+— CEO and Founder, Flight Deck Strategic Solutions
 
 ## Our Story
 
-Founded in 2015 by a team of experienced business strategists and operational experts, Flight Deck Strategic Solutions emerged from a simple observation: too many good companies were struggling not because they lacked potential, but because they lacked the strategic framework to realize it.
+Flight Deck Strategic Solutions was founded on a simple yet powerful insight: the aviation industry has developed the world's most effective methodologies for high-pressure decision-making, team performance, and safety management. Our team of experienced Commercial Airline Pilots recognized that these proven strategies could transform business performance across all industries.
 
-Drawing inspiration from aviation's precision and systematic approach to complex challenges, we developed our unique methodology that combines strategic thinking with operational excellence. Just as pilots use their flight deck instruments to navigate complex conditions and reach their destination safely, we help businesses navigate market complexities to achieve their strategic objectives.
+Drawing from decades of aviation experience and the rigorous training that makes commercial aviation the safest form of transportation, we developed our unique approach to business training and development.
+
+## Our Team
+
+### Experienced Airline Pilots
+Our facilitators are experienced Commercial Pilots with extensive leadership experience in high-pressure aviation environments. They bring real-world expertise in:
+
+- **Crew Resource Management (CRM)**: The gold standard for team collaboration and communication
+- **Decision-making under pressure**: Systematic frameworks for critical choices with limited time and information
+- **Risk Management**: Proactive threat assessment and error prevention protocols
+- **Psychological Safety**: Creating environments where team members speak up and contribute effectively
+- **Crisis Leadership**: Maintaining clarity and team coordination during emergencies
 
 ## Our Approach
 
-### Strategic Foundation
-Every engagement begins with understanding your unique business context, challenges, and aspirations. We don't believe in one-size-fits-all solutions.
+### Aviation-Proven Methodologies
+Every technique we teach has been tested and refined in the demanding environment of commercial aviation, where there is no margin for error.
 
-### Collaborative Partnership
-We work alongside your team, transferring knowledge and building internal capabilities that ensure sustainable success long after our engagement ends.
+### Real-World Application
+We translate aviation excellence into practical business solutions, using case studies and examples that demonstrate clear connections between flight deck and boardroom challenges.
 
-### Results-Driven Focus
-Our success is measured by your results. We're committed to delivering tangible, measurable improvements to your business performance.
+### Experiential Learning
+Our training goes beyond theory—participants experience aviation-inspired exercises and simulations that create lasting behavioral change.
 
-## Our Values
+### Continuous Development
+Just as pilots undergo continuous training and assessment, we support ongoing development to ensure lasting transformation.
 
-**Excellence**: We strive for the highest standards in everything we do, from strategic analysis to implementation support.
+## Why Aviation Excellence?
 
-**Integrity**: We build relationships based on trust, transparency, and honest communication.
+The aviation industry has achieved unprecedented safety records through systematic approaches to:
 
-**Innovation**: We continuously evolve our methodologies and embrace new approaches that drive better outcomes.
+- **Human Factors**: Understanding how people perform under pressure
+- **Crew Resource Management**: Optimizing team performance and communication
+- **Error Management**: Learning from failures to prevent future incidents
+- **Systematic Training**: Rigorous, standardized development programs
+- **Continuous Improvement**: Constant refinement based on data and experience
 
-**Collaboration**: We believe the best solutions emerge from working together, combining our expertise with your industry knowledge.
+These same principles can revolutionize business performance, creating organizations that operate with the precision, safety, and effectiveness of a modern airline.
 
-**Impact**: We're passionate about making a meaningful difference in the businesses and communities we serve.
+## Join Our Team
 
-## Why "Flight Deck"?
+Are you an experienced Commercial Pilot with leadership experience? Join our elite team of Pilot Facilitators and help transform businesses through aviation excellence.
 
-The flight deck represents precision, preparation, and performance under pressure. It's where critical decisions are made with incomplete information, where teamwork and communication are essential, and where the smallest adjustments can determine success or failure.
+We're looking for pilots who can:
+- Translate aviation experience into business insights
+- Deliver engaging and impactful training sessions
+- Work with diverse business audiences
+- Demonstrate leadership and communication excellence
 
-These same principles apply to business strategy. In an increasingly complex and fast-moving business environment, organizations need a strategic "flight deck"—a systematic approach to navigation, decision-making, and execution that helps them reach their destination successfully.
-
-Ready to learn more about how we can help your business soar? [Get in touch with our team](/contact).
+Ready to discover how aviation excellence can transform your organization? [Contact us today](/contact) to learn more about our approach.
