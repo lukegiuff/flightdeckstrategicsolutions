@@ -104,7 +104,7 @@ function HeroSection({ homePage }: { homePage: Page | null }) {
     <motion.section 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="relative h-[70vh] md:h-[80vh] flex items-center justify-center overflow-hidden"
+      className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden"
     >
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
@@ -119,24 +119,24 @@ function HeroSection({ homePage }: { homePage: Page | null }) {
       </div>
       
       {/* Content Layer */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 py-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-12 md:py-16">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-jura font-medium text-white mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-jura font-medium text-white mb-6 leading-tight">
             {homePage?.data.title || 'Turning Flight-Deck Strategies into Boardroom Solutions'}
           </h1>
-          <p className="text-white/90 text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-white/90 text-base sm:text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
             {homePage?.data.description || 'Transform your business with aviation-inspired methodologies that deliver confident decision-making, psychological safety and high-performing teams with exceptional results.'}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               href="/contact"
-              className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-medium hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white shadow-lg"
+              className="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-medium hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white shadow-lg"
             >
               Book Consultation
             </Link>
             <Link 
               href="/services"
-              className="border-2 border-white text-white px-8 py-4 rounded-2xl font-medium hover:bg-white hover:text-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-white"
+              className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-medium hover:bg-white hover:text-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-white"
             >
               Learn Our Approach
             </Link>
@@ -145,7 +145,7 @@ function HeroSection({ homePage }: { homePage: Page | null }) {
       </div>
       
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <div className="animate-bounce">
           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
@@ -165,11 +165,11 @@ function WhatWeDoSection() {
       id="what-we-do"
       className="bg-gray-50 py-16"
     >
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left: What We Do - from markdown */}
           <div>
-            <h2 className="text-3xl font-jura font-medium text-black mb-6">What We Do</h2>
+            <h2 className="text-2xl sm:text-3xl font-jura font-medium text-black mb-6">What We Do</h2>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
@@ -188,7 +188,7 @@ function WhatWeDoSection() {
           
           {/* Right: Mission */}
           <div>
-            <blockquote className="bg-white p-8 rounded-2xl shadow-md/10 border-l-4 border-blue-600">
+            <blockquote className="bg-white p-4 sm:p-8 rounded-2xl shadow-md/10 border-l-4 border-blue-600">
               <p className="text-gray-700 text-lg italic mb-4">
                 &ldquo;Aviation has perfected the art of high-stakes decision-making under pressure. Our mission is to bring that same level of precision, clarity and systematic thinking to business leadership. We equip our clients with aviation-proven tools to develop high-performing teams, while promoting a culture of psychological safety, resilience and risk management.&rdquo;
               </p>
@@ -226,9 +226,9 @@ function WorkshopTopicsSection({ services }: { services: Service[] }) {
       id="workshops"
       className="bg-white py-16"
     >
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-jura font-medium text-black mb-4">Workshop Topics</h2>
+          <h2 className="text-2xl sm:text-3xl font-jura font-medium text-black mb-4">Workshop Topics</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Our comprehensive training modules blend aviation excellence with business strategy. Our workshops are bespoke, based on each client&apos;s individual business needs:
           </p>
@@ -263,14 +263,14 @@ function ConsultationSection() {
       id="consultation"
       className="bg-gray-50 py-16"
     >
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-jura font-medium text-black mb-6">Free Strategic Consultation</h2>
+          <h2 className="text-2xl sm:text-3xl font-jura font-medium text-black mb-6">Free Strategic Consultation</h2>
           <p className="text-gray-700 mb-8">
             Discover how aviation-inspired methodologies can transform your organisation. Book a complimentary, 30-minute consultation with one of our expert Airline Pilot Facilitators.
           </p>
           
-          <div className="bg-white p-8 rounded-2xl shadow-md/10 mb-8">
+          <div className="bg-white p-4 sm:p-8 rounded-2xl shadow-md/10 mb-8">
             <h3 className="text-xl font-jura font-medium text-black mb-4">What You&apos;ll Receive:</h3>
             <ul className="text-left space-y-3 mb-8">
               <li className="flex items-start gap-3">
@@ -310,20 +310,20 @@ function LunchLearnSection() {
       id="lunch-learn"
       className="bg-white py-16"
     >
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-jura font-medium text-black mb-6">Lunch & Learn Session</h2>
+          <h2 className="text-2xl sm:text-3xl font-jura font-medium text-black mb-6">Lunch & Learn Session</h2>
           <p className="text-gray-700 mb-8">
             Transform your team with our series of online Lunch & Learn sessions, led by one of our experienced Airline Pilot Course Facilitators. These concise learning experiences deliver essential information from our training modules, condensed into bite-sized chunks.
           </p>
           
-          <div className="bg-gray-50 p-8 rounded-2xl shadow-md/10 mb-8">
-            <div className="text-6xl font-jura font-medium text-black mb-2">£995</div>
+          <div className="bg-gray-50 p-4 sm:p-8 rounded-2xl shadow-md/10 mb-8">
+            <div className="text-4xl sm:text-6xl font-jura font-medium text-black mb-2">£995</div>
             <p className="text-gray-600 mb-6">Per individual session lasting 1 hour (up to 20 participants)</p>
             
             <p className="text-gray-700 mb-4">or</p>
             
-            <div className="text-4xl font-jura font-medium text-black mb-2">£5750</div>
+            <div className="text-3xl sm:text-4xl font-jura font-medium text-black mb-2">£5750</div>
             <p className="text-gray-600 mb-6">entire course of 6 modules booked in advance (up to 20 people)</p>
             
             <p className="text-gray-700 mb-8">
@@ -356,14 +356,14 @@ function JoinUsSection() {
       id="join-us"
       className="bg-gray-50 py-16"
     >
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-jura font-medium text-black mb-6">Join Us – Pilot Facilitators</h2>
+          <h2 className="text-2xl sm:text-3xl font-jura font-medium text-black mb-6">Join Us – Pilot Facilitators</h2>
           <p className="text-gray-700 mb-8">
             Are you an experienced Commercial Pilot with leadership experience? Join our elite team of Pilot Facilitators and help transform businesses through aviation excellence.
           </p>
           
-          <form className="bg-white p-8 rounded-2xl shadow-md/10 text-left">
+          <form className="bg-white p-4 sm:p-8 rounded-2xl shadow-md/10 text-left">
             <div className="mb-6">
               <label htmlFor="resume" className="block text-sm font-medium text-black mb-2">
                 Upload Resume/CV
@@ -421,11 +421,11 @@ function ContactSection() {
       id="contact"
       className="bg-white py-16"
     >
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Details */}
           <div>
-            <h2 className="text-3xl font-jura font-medium text-black mb-6">Contact Us</h2>
+            <h2 className="text-2xl sm:text-3xl font-jura font-medium text-black mb-6">Contact Us</h2>
             <div className="space-y-4 mb-8">
               <div>
                 <h3 className="font-medium text-black mb-2">Email</h3>
@@ -499,7 +499,7 @@ function ContactSection() {
 function FooterSection({ onOpenLegal }: { onOpenLegal: (content: string) => void }) {
   return (
     <footer className="bg-black text-white py-12">
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Left: Logo */}
           <div className="mb-6 md:mb-0">
